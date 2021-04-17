@@ -59,10 +59,7 @@ class CurrencyComponent extends Component {
     onSelect(e) {
         this.setState({
             currencyValue: e
-
-        }, () => {
-            this.props.actions.getHistoricalPriceList(e.value, "2020-09-01", "2020-10-30")
-        })
+        }, () => { this.props.actions.getHistoricalPriceList(e.value, "2020-09-01", "2020-10-30") })
     }
 
     render() {

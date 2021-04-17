@@ -6,10 +6,10 @@ import PropTypes from "prop-types";
 
 
 
-const ChartComponent = (labeled, datas) => {
-
+const ChartComponent = (labeledData) => {
+    debugger
     let data = {
-        labels: labeled["label"],
+        labels: labeledData["label"],
         datasets: [
             {
                 // label: 'Last 60 days trends',
@@ -18,7 +18,7 @@ const ChartComponent = (labeled, datas) => {
                 borderColor: ' rgb(0,200,100,0.6)  ',
                 pointRadius: 1,
                 pointHitRadius: 5,
-                data: labeled["datas"]
+                data: labeledData["datas"]
             }
         ]
     };
